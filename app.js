@@ -18,13 +18,15 @@ add.onclick=(e)=>{
         input.style.border=`1px solid black`
     } else {
         input.style.border=`1px solid red`
-        // const noTodo = `noTodo` 
-        // document.write(`no Todo`)
     }
 }
 
 function showData(arr){
     list.innerHTML=""
+    if (arr.length === 0) {
+    list.innerHTML = `<li class="list-group-item d-flex align-items-center">No todo</li>`; 
+    return; 
+}
     for(const todo of arr){
         let clazz = ""
         let clazzImportant = ""
