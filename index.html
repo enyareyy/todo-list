@@ -19,16 +19,26 @@
 </head>
 <body>
     <div style="width: 80%; margin: 0 auto">
+        <div class="d-flex justify-content-between aling-items-center">
         <h1>Todo list</h1>
+        <div>
+            <button id="all" class="btn btn-outline-secondary">All</button>
+            <button id="idDone" class="btn btn-outline-secondary">Done</button>
+            <button id="active" class="btn btn-outline-secondary">Active</button>
+        </div>
+        </div>
         <form >
             <div class="d-flex">
                 <input type="text" class="input-group" id="mainInput">
-                <button class="btn btn-info" id="add">add</button>
+                <button class="btn btn-primary isBtn" id="add">add</button>
+                <button class="btn btn-primary isBtn"  id="change">change</button>
             </div>
+            
+            
                 <ul class="list-group" id="list">
                     
                 </ul>
-            
+        </div>    
         </form>
 
     </div>
